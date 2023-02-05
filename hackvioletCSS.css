@@ -63,14 +63,12 @@ div {
     max-width: 100%;
     padding: 0 25px;
     position: relative;
-    left: 28%;
     text-align: center;
     text-decoration: none;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
 }
-
 
 .button-start:after {
     background-color: #111;
@@ -93,7 +91,6 @@ div {
     content: "";
     display: block;
     height: 48px;
-    left: 0;
     width: 100%;
     position: absolute;
     top: -2px;
@@ -115,12 +112,7 @@ div {
     outline: 0;
 }
 
-
 .button-start:hover {
-    outline: 0;
-}
-
-.button-download:hover {
     outline: 0;
 }
 
@@ -128,8 +120,17 @@ div {
     .button-start {
         padding: 0 40px;
     }
+}
 
-    .button-download {
-        padding: 0 40px;
-    }
+button2 {
+    transition: transform 0.7s ease-in-out;
+}
+
+button2:hover {
+    transform: rotate(360deg);
+}
+
+img {
+    width: 70px;
+    height: 70px;
 }
