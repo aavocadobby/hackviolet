@@ -1,0 +1,135 @@
+body,
+h1 {
+    font-family: "Raleway", sans-serif
+}
+
+body,
+html {
+    height: 100%
+}
+
+div {
+    padding-top: 100px;
+}
+
+.bgimg {
+    background-image: url('https://images5.alphacoders.com/737/737385.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.button-start {
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    left: 39%;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-download {
+
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    left: 28%;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+
+.button-start:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+.button-download:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+.button-start:hover:after {
+    transform: translate(0, 0);
+}
+
+.button-download:hover:after {
+    transform: translate(0, 0);
+}
+
+.button-start:active {
+    background-color: #ffdeda;
+    outline: 0;
+}
+
+
+.button-start:hover {
+    outline: 0;
+}
+
+.button-download:hover {
+    outline: 0;
+}
+
+@media (min-width: 768px) {
+    .button-start {
+        padding: 0 40px;
+    }
+
+    .button-download {
+        padding: 0 40px;
+    }
+}
